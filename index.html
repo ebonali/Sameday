@@ -1,182 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Same-Day & Last-Minute Movers Florida | Movers Escargot</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Nunito',sans-serif;color:#333;background:#fff}a{text-decoration:none;color:inherit}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same-Day & Last-Minute Movers Florida | Movers Escargot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
 
-/* NAV — logo centered, large, no phone */
-.nav{background:#5bc4f5;padding:.5rem 2rem;display:flex;justify-content:center;align-items:center}
-.nav-logo img{height:160px;width:auto;display:block;margin:0 auto}
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+            background: #fff
+        }
 
-/* HERO — split layout */
-.hero{background:#5bc4f5;padding:0 2rem 5rem}
-/* no curve transition */
-.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:1200px;margin:0 auto;align-items:center}
+        a {
+            text-decoration: none;
+            color: inherit
+        }
 
-/* LEFT SIDE — bigger text to match form size */
-.hero-left{text-align:left}
-.badge{display:inline-block;background:#f07c1e;color:#fff;font-size:1.2rem;font-weight:800;padding:.6rem 1.6rem;border-radius:50px;letter-spacing:1.5px;margin-bottom:1.5rem;text-transform:uppercase;animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
-.hero h1{font-family:'Fredoka One',cursive;font-size:clamp(2.4rem,5vw,3.8rem);color:#1a1f3a;line-height:1.08;margin-bottom:1rem}
-.hero h1 em{color:#ED1C24;font-style:normal}
-.hero-sub{color:#1a1f3a;font-size:1.25rem;font-weight:800;margin-bottom:2.5rem;max-width:500px;line-height:1.6}
-.btns{display:flex;gap:1rem;flex-wrap:wrap}
-.bp{background:#f07c1e;color:#fff;padding:1rem 2.2rem;border-radius:50px;font-weight:800;font-size:1.1rem;display:inline-block;transition:all .2s;border:none;cursor:pointer;font-family:'Nunito',sans-serif}.bp:hover{background:#f5c842;color:#5bc4f5}
+        /* NAV — logo centered, large, no phone */
+        .nav {
+            background: #5bc4f5;
+            padding: .5rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
 
-/* HERO FORM — cream background */
-.hero-form{background:#fde8c8;border-radius:20px;padding:2rem 1.5rem;box-shadow:0 10px 40px rgba(0,0,0,.12)}
-.hero-form-title{font-family:'Fredoka One',cursive;font-size:1.8rem;color:#333;margin-bottom:.35rem;text-align:center}
-.hero-form-sub{color:#555;font-size:.85rem;font-weight:700;margin-bottom:1.25rem;text-align:center}
-.hf-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:.75rem}
-.hf{display:flex;flex-direction:column;gap:.3rem}
-.hf label{font-weight:800;font-size:.75rem;color:#333;text-transform:uppercase;letter-spacing:.5px}
-.hf input,.hf select,.hf textarea{padding:.6rem .75rem;border-radius:12px;border:2px solid #e8e8e8;font-family:'Nunito',sans-serif;font-size:.85rem;font-weight:600;color:#333;background:#fff;outline:none;width:100%}
-.hf input::placeholder,.hf textarea::placeholder{color:#ccc}
-.hf input:focus,.hf select:focus,.hf textarea:focus{border-color:#f07c1e}
-.hf-full{grid-column:1/-1}
-/* Submit button: blue bg, dark text */
-.hf-submit{background:#5bc4f5;color:#1a1f3a;border:none;padding:.85rem;border-radius:50px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1.1rem;cursor:pointer;width:100%;margin-top:.5rem;transition:background .2s}.hf-submit:hover{background:#4ab3e4}
+        .nav-logo img {
+            height: 160px;
+            width: auto;
+            display: block;
+            margin: 0 auto
+        }
 
-/* HOW IT WORKS */
-.label{display:inline-block;background:#5bc4f5;color:#1a1f3a;font-size:1.1rem;font-weight:800;padding:.5rem 1.5rem;border-radius:50px;letter-spacing:1px;margin-bottom:1rem;text-transform:uppercase}
-.st{font-family:'Fredoka One',cursive;font-size:clamp(1.6rem,3.5vw,2.4rem);color:#333;margin-bottom:.5rem;line-height:1.2}
-.ss{color:#000;font-size:1.1rem;font-weight:700;margin-bottom:3rem}
-.tc{text-align:center}
-.how{background:#fde8c8;padding:5rem 2rem}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:900px;margin:0 auto}
-.step{text-align:center}
-.step-num{font-family:'Fredoka One',cursive;font-size:3rem;color:#f07c1e;display:block;margin-bottom:.5rem}
-.step h3{font-family:'Fredoka One',cursive;font-size:1.15rem;color:#333;margin-bottom:.5rem}
-.step p{color:#555;font-size:.9rem;font-weight:600;line-height:1.6}
+        /* HERO — split layout */
+        .hero {
+            background: #5bc4f5;
+            padding: 0 2rem 5rem
+        }
 
-/* FOOTER */
-.foot{background:#5bc4f5;padding:2rem;text-align:center}
-.foot-b{font-family:'Fredoka One',cursive;font-size:1.8rem;color:#f5c842;margin-bottom:.5rem}.foot-b span{color:#f07c1e}
-.foot p{color:#1a1f3a;font-weight:700;font-size:.9rem}
-.foot-l{display:flex;justify-content:center;gap:1.5rem;margin-top:1rem;flex-wrap:wrap}
-.foot-l a{color:#1a1f3a;font-weight:800;font-size:.9rem}.foot-l a:hover{color:#f07c1e}
+        /* no curve transition */
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center
+        }
 
-/* WHATSAPP with text */
-.wa{position:fixed;bottom:2rem;right:2rem;z-index:9999;background:#25d366;color:#fff;display:flex;align-items:center;gap:.6rem;padding:.75rem 1.25rem .75rem .85rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,0.5);transition:transform .2s;font-family:'Nunito',sans-serif;font-weight:800;font-size:.85rem}.wa:hover{transform:scale(1.05);box-shadow:0 6px 28px rgba(37,211,102,0.6)}.wa svg{width:30px;height:30px;min-width:30px;fill:#fff}
+        /* LEFT SIDE — bigger text to match form size */
+        .hero-left {
+            text-align: left
+        }
 
-@media(max-width:768px){
-  .hero-inner{grid-template-columns:1fr}
-  .hero-left{text-align:center}
-  .btns{justify-content:center}
-  .steps{grid-template-columns:1fr}
-  .hf-grid{grid-template-columns:1fr}
-  .hf-full{grid-column:auto}
-  .nav-logo img{height:100px}
-}
-</style>
+        .badge {
+            display: inline-block;
+            background: #f07c1e;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 800;
+            padding: .6rem 1.6rem;
+            border-radius: 50px;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            animation: pulse 2s ease-in-out infinite
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.05)
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            color: #1a1f3a;
+            line-height: 1.08;
+            margin-bottom: 1rem
+        }
+
+        .hero h1 em {
+            color: #ED1C24;
+            font-style: normal
+        }
+
+        .hero-sub {
+            color: #1a1f3a;
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            line-height: 1.6
+        }
+
+        .btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap
+        }
+
+        .bp {
+            background: #f07c1e;
+            color: #fff;
+            padding: 1rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all .2s;
+            border: none;
+            cursor: pointer;
+            font-family: 'Nunito', sans-serif
+        }
+
+        .bp:hover {
+            background: #f5c842;
+            color: #5bc4f5
+        }
+
+        /* HERO FORM — cream background */
+        .hero-form {
+            background: #fde8c8;
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .12)
+        }
+
+        .hero-form-title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: .35rem;
+            text-align: center
+        }
+
+        .hero-form-sub {
+            color: #555;
+            font-size: .85rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            text-align: center
+        }
+
+        .hf-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .75rem;
+            margin-bottom: .75rem
+        }
+
+        .hf {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem
+        }
+
+        .hf label {
+            font-weight: 800;
+            font-size: .75rem;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: .5px
+        }
+
+        .hf input,
+        .hf select,
+        .hf textarea {
+            padding: .6rem .75rem;
+            border-radius: 12px;
+            border: 2px solid #e8e8e8;
+            font-family: 'Nunito', sans-serif;
+            font-size: .85rem;
+            font-weight: 600;
+            color: #333;
+            background: #fff;
+            outline: none;
+            width: 100%
+        }
+
+        .hf input::placeholder,
+        .hf textarea::placeholder {
+            color: #ccc
+        }
+
+        .hf input:focus,
+        .hf select:focus,
+        .hf textarea:focus {
+            border-color: #f07c1e
+        }
+
+        .hf-full {
+            grid-column: 1/-1
+        }
+
+        /* Submit button: blue bg, dark text */
+        .hf-submit {
+            background: #5bc4f5;
+            color: #1a1f3a;
+            border: none;
+            padding: .85rem;
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: .5rem;
+            transition: background .2s
+        }
+
+        .hf-submit:hover {
+            background: #4ab3e4
+        }
+
+        /* HOW IT WORKS */
+        .label {
+            display: inline-block;
+            background: #5bc4f5;
+            color: #1a1f3a;
+            font-size: 1.1rem;
+            font-weight: 800;
+            padding: .5rem 1.5rem;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            text-transform: uppercase
+        }
+
+        .st {
+            font-family: 'Fredoka One', cursive;
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            color: #333;
+            margin-bottom: .5rem;
+            line-height: 1.2
+        }
+
+        .ss {
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 3rem
+        }
+
+        .tc {
+            text-align: center
+        }
+
+        .how {
+            background: #fde8c8;
+            padding: 5rem 2rem
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto
+        }
+
+        .step {
+            text-align: center
+        }
+
+        .step-num {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3rem;
+            color: #f07c1e;
+            display: block;
+            margin-bottom: .5rem
+        }
+
+        .step h3 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.15rem;
+            color: #333;
+            margin-bottom: .5rem
+        }
+
+        .step p {
+            color: #555;
+            font-size: .9rem;
+            font-weight: 600;
+            line-height: 1.6
+        }
+
+        /* FOOTER */
+        .foot {
+            background: #5bc4f5;
+            padding: 2rem;
+            text-align: center
+        }
+
+        .foot-b {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            color: #f5c842;
+            margin-bottom: .5rem
+        }
+
+        .foot-b span {
+            color: #f07c1e
+        }
+
+        .foot p {
+            color: #1a1f3a;
+            font-weight: 700;
+            font-size: .9rem
+        }
+
+        .foot-l {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap
+        }
+
+        .foot-l a {
+            color: #1a1f3a;
+            font-weight: 800;
+            font-size: .9rem
+        }
+
+        .foot-l a:hover {
+            color: #f07c1e
+        }
+
+        /* WHATSAPP with text */
+        .wa {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            background: #25d366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            padding: .75rem 1.25rem .75rem .85rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            transition: transform .2s;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: .85rem
+        }
+
+        .wa:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6)
+        }
+
+        .wa svg {
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+            fill: #fff
+        }
+
+        @media(max-width:768px) {
+            .hero-inner {
+                grid-template-columns: 1fr
+            }
+
+            .hero-left {
+                text-align: center
+            }
+
+            .btns {
+                justify-content: center
+            }
+
+            .steps {
+                grid-template-columns: 1fr
+            }
+
+            .hf-grid {
+                grid-template-columns: 1fr
+            }
+
+            .hf-full {
+                grid-column: auto
+            }
+
+            .nav-logo img {
+                height: 100px
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- NAV: Logo centered, large, no phone number -->
-<nav class="nav">
-  <a href="#" class="nav-logo"><img src="https://images.squarespace-cdn.com/content/v1/69bee0d4d46b187254abd557/a3a44c9c-d1a3-490e-acc8-a8bdeb806078/ChatGPT+Image+Mar+22%2C+2026%2C+11_46_24+PM.png" alt="Movers Escargot"></a>
-</nav>
+    <!-- NAV: Logo centered, large, no phone number -->
+    <nav class="nav">
+        <a href="#" class="nav-logo"><img
+                src="https://images.squarespace-cdn.com/content/v1/69bee0d4d46b187254abd557/a3a44c9c-d1a3-490e-acc8-a8bdeb806078/ChatGPT+Image+Mar+22%2C+2026%2C+11_46_24+PM.png"
+                alt="Movers Escargot"></a>
+    </nav>
 
-<!-- HERO: Text Left (bigger) + Quote Form Right (cream) -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="badge">⚡ SAME-DAY AVAILABLE</div>
-      <h1>Moving <em>Today</em>?<br>We're Already<br>On The Way.</h1>
-      <p class="hero-sub">Last-minute move? Emergency relocation? Call now and we'll have a crew at your door — fast (for a snail).</p>
-      <div class="btns">
-        <a href="tel:5619510128" class="bp">📞 Call Now — (561) 951-0128</a>
-      </div>
-    </div>
-    <div class="hero-form">
-      <h3 class="hero-form-title">⚡ Same-Day Quote</h3>
-      <p class="hero-form-sub">Fill this out — we respond ASAP.</p>
-      <form id="lp-form" action="https://formsubmit.co/rybchinskiy@yahoo.com" method="POST">
-        <input type="hidden" name="_subject" value="URGENT Same-Day Quote - Classic LP">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <div class="hf-grid">
-          <div class="hf"><label>First Name</label><input type="text" name="First Name" placeholder="John" required></div>
-          <div class="hf"><label>Last Name</label><input type="text" name="Last Name" placeholder="Smith" required></div>
-          <div class="hf"><label>Phone</label><input type="tel" name="Phone" placeholder="(555) 555-5555" required></div>
-          <div class="hf"><label>Email</label><input type="email" name="email" placeholder="john@email.com" required></div>
-          <div class="hf"><label>Moving From</label><input type="text" name="Moving From" placeholder="Current address" required></div>
-          <div class="hf"><label>Moving To</label><input type="text" name="Moving To" placeholder="New address" required></div>
-          <div class="hf"><label>Home Size</label>
-            <select name="Service Type">
-              <option>Studio / 1 Bedroom</option>
-              <option>2 Bedrooms</option>
-              <option>3+ Bedrooms</option>
-              <option>Just a Few Items</option>
-            </select>
-          </div>
-          <div class="hf"><label>When Do You Need Us?</label>
-            <select name="Preferred Move Date">
-              <option>TODAY</option>
-              <option>Tomorrow</option>
-              <option>Within 3 Days</option>
-              <option>This Week</option>
-            </select>
-          </div>
-          <div class="hf hf-full"><label>Anything Else?</label><textarea rows="2" name="Message" placeholder="Stairs, heavy items, time constraints..."></textarea></div>
+    <!-- HERO: Text Left (bigger) + Quote Form Right (cream) -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="badge">⚡ SAME-DAY AVAILABLE</div>
+                <h1>Moving <em>Today</em>?<br>We're Already<br>On The Way.</h1>
+                <p class="hero-sub">Last-minute move? Emergency relocation? Call now and we'll have a crew at your door
+                    — fast (for a snail).</p>
+                <div class="btns">
+                    <a href="tel:5619510128" class="bp">📞 Call Now — (561) 951-0128</a>
+                </div>
+            </div>
+            <div class="hero-form">
+                <div id="form-success" style="display:none;text-align:center;padding:2rem 0">
+                    <h3 class="hero-form-title">✅ We're On It!</h3>
+                    <p class="hero-form-sub">Your urgent request has been received. A member of our team will contact you within the next few minutes.</p>
+                </div>
+                <div id="form-content">
+                    <h3 class="hero-form-title">⚡ Same-Day Quote</h3>
+                    <p class="hero-form-sub">Fill this out — we respond ASAP.</p>
+                    <form id="lp-form" action="https://formsubmit.co/ajax/rybchinskiy@yahoo.com" method="POST">
+                        <input type="hidden" name="_subject" value="URGENT Same-Day Quote - Classic LP">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://commercial.moversescargot.com/sameday.html">
+                        <div class="hf-grid">
+                            <div class="hf"><label>First Name</label><input type="text" name="First Name" placeholder="John"
+                                    required></div>
+                            <div class="hf"><label>Last Name</label><input type="text" name="Last Name" placeholder="Smith"
+                                    required></div>
+                            <div class="hf"><label>Phone</label><input type="tel" name="Phone" placeholder="(555) 555-5555"
+                                    required></div>
+                            <div class="hf"><label>Email</label><input type="email" name="email"
+                                    placeholder="john@email.com" required></div>
+                            <div class="hf"><label>Moving From</label><input type="text" name="Moving From"
+                                    placeholder="Current address" required></div>
+                            <div class="hf"><label>Moving To</label><input type="text" name="Moving To"
+                                    placeholder="New address" required></div>
+                            <div class="hf"><label>Home Size</label>
+                                <select name="Service Type">
+                                    <option>Studio / 1 Bedroom</option>
+                                    <option>2 Bedrooms</option>
+                                    <option>3+ Bedrooms</option>
+                                    <option>Just a Few Items</option>
+                                </select>
+                            </div>
+                            <div class="hf"><label>When Do You Need Us?</label>
+                                <select name="Preferred Move Date">
+                                    <option>TODAY</option>
+                                    <option>Tomorrow</option>
+                                    <option>Within 3 Days</option>
+                                    <option>This Week</option>
+                                </select>
+                            </div>
+                            <div class="hf hf-full"><label>Anything Else?</label><textarea rows="2" name="Message"
+                                    placeholder="Stairs, heavy items, time constraints..."></textarea></div>
+                        </div>
+                        <button type="submit" class="hf-submit">⚡ Send URGENT Quote Request</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <button type="submit" class="hf-submit">⚡ Send URGENT Quote Request</button>
-      </form>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- HOW IT WORKS -->
-<section class="how">
-  <div class="tc">
-    <div class="label" style="background:#f07c1e;color:#fff">How It Works</div>
-    <h2 class="st">Three Steps to Moving Today</h2>
-    <p class="ss">It's really this simple.</p>
-  </div>
-  <div class="steps">
-    <div class="step"><span class="step-num">1</span><h3>Call Us</h3><p>Ring (561) 951-0128 and tell us what you need. We'll confirm availability instantly.</p></div>
-    <div class="step"><span class="step-num">2</span><h3>We Show Up</h3><p>Our crew arrives with truck, supplies, and a plan. We handle the heavy lifting.</p></div>
-    <div class="step"><span class="step-num">3</span><h3>You're Moved</h3><p>Same day. New place. No stress. It's that easy.</p></div>
-  </div>
-</section>
+    <!-- HOW IT WORKS -->
+    <section class="how">
+        <div class="tc">
+            <div class="label" style="background:#f07c1e;color:#fff">How It Works</div>
+            <h2 class="st">Three Steps to Moving Today</h2>
+            <p class="ss">It's really this simple.</p>
+        </div>
+        <div class="steps">
+            <div class="step"><span class="step-num">1</span>
+                <h3>Call Us</h3>
+                <p>Ring (561) 951-0128 and tell us what you need. We'll confirm availability instantly.</p>
+            </div>
+            <div class="step"><span class="step-num">2</span>
+                <h3>We Show Up</h3>
+                <p>Our crew arrives with truck, supplies, and a plan. We handle the heavy lifting.</p>
+            </div>
+            <div class="step"><span class="step-num">3</span>
+                <h3>You're Moved</h3>
+                <p>Same day. New place. No stress. It's that easy.</p>
+            </div>
+        </div>
+    </section>
 
-<script>
-document.getElementById('lp-form').addEventListener('submit',function(e){
-  var fn=document.querySelector('[name="First Name"]').value,
-      ln=document.querySelector('[name="Last Name"]').value,
-      ph=document.querySelector('[name="Phone"]').value,
-      mf=document.querySelector('[name="Moving From"]').value,
-      mt=document.querySelector('[name="Moving To"]').value,
-      st=document.querySelector('[name="Service Type"]').value,
-      md=document.querySelector('[name="Preferred Move Date"]').value;
-  var body='URGENT Same-Day Lead - Classic LP\nName: '+fn+' '+ln+'\nPhone: '+ph+'\nFrom: '+mf+'\nTo: '+mt+'\nSize: '+st+'\nWhen: '+md;
-  fetch('https://api.twilio.com/2010-04-01/Accounts/AC78436ae6cf20cc56d6e4be742b68dc44/Messages.json',{
-    method:'POST',
-    headers:{'Authorization':'Basic '+btoa('AC78436ae6cf20cc56d6e4be742b68dc44:241a80c06fd8f2ff976d67fa5d2aa8e0'),'Content-Type':'application/x-www-form-urlencoded'},
-    body:'To=%2B15619510128&From=%2B15619449448&Body='+encodeURIComponent(body)
-  });
-});
-</script>
+    <script>
+        document.getElementById('lp-form').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            var form = this;
+            var submitBtn = form.querySelector('.hf-submit');
+            var originalText = submitBtn.innerText;
+            submitBtn.innerText = 'Sending...';
+            submitBtn.disabled = true;
 
-<footer class="foot">
-  <div class="foot-b">Movers <span>Escargot</span></div>
-  <p>Same-day movers in Florida. Call (561) 951-0128.</p>
-  <div class="foot-l">
-    <a href="tel:5619510128">📞 Call Now</a>
-    <a href="mailto:rybchinskiy@yahoo.com">✉️ Email</a>
-    <a href="https://wa.me/15619510128">💬 WhatsApp</a>
-  </div>
-  <p style="margin-top:1.5rem;font-size:.8rem;opacity:.7">© 2026 Movers Escargot.</p>
-</footer>
+            var fn = document.querySelector('[name="First Name"]').value,
+                ln = document.querySelector('[name="Last Name"]').value,
+                ph = document.querySelector('[name="Phone"]').value,
+                mf = document.querySelector('[name="Moving From"]').value,
+                mt = document.querySelector('[name="Moving To"]').value,
+                st = document.querySelector('[name="Service Type"]').value,
+                md = document.querySelector('[name="Preferred Move Date"]').value;
+            var body = 'URGENT Same-Day Lead - Classic LP\nName: ' + fn + ' ' + ln + '\nPhone: ' + ph + '\nFrom: ' + mf + '\nTo: ' + mt + '\nSize: ' + st + '\nWhen: ' + md;
+            
+            try {
+                // Twilio Notification
+                await fetch('https://api.twilio.com/2010-04-01/Accounts/AC78436ae6cf20cc56d6e4be742b68dc44/Messages.json', {
+                    method: 'POST',
+                    headers: { 'Authorization': 'Basic ' + btoa('AC78436ae6cf20cc56d6e4be742b68dc44:241a80c06fd8f2ff976d67fa5d2aa8e0'), 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: 'To=%2B15619510128&From=%2B15619449448&Body=' + encodeURIComponent(body)
+                });
 
-<a href="https://wa.me/15619510128" target="_blank" class="wa">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  NEED HELP? CHAT WITH US NOW
-</a>
+                // FormSubmit AJAX Submission
+                var formData = new FormData(form);
+                await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                // Success!
+                document.getElementById('form-content').style.display = 'none';
+                document.getElementById('form-success').style.display = 'block';
+
+            } catch (err) {
+                console.error('Error submitting form:', err);
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+                alert('Something went wrong. Please try again or call us directly.');
+            }
+        });
+    </script>
+
+    <footer class="foot">
+        <div class="foot-b">Movers <span>Escargot</span></div>
+        <p>Same-day movers in Florida. Call (561) 951-0128.</p>
+        <div class="foot-l">
+            <a href="tel:5619510128">📞 Call Now</a>
+            <a href="mailto:rybchinskiy@yahoo.com">✉️ Email</a>
+            <a href="https://wa.me/15619510128">💬 WhatsApp</a>
+        </div>
+        <p style="margin-top:1.5rem;font-size:.8rem;opacity:.7">© 2026 Movers Escargot.</p>
+    </footer>
+
+    <a href="https://wa.me/15619510128" target="_blank" class="wa">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        NEED HELP? CHAT WITH US NOW
+    </a>
 
 </body>
+
 </html>
